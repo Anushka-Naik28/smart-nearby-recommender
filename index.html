@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Nearby Recommender</title>
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    📍 Smart Nearby Recommender
+  </header>
+
+  <div class="controls">
+    <select id="placeType">
+      <option value="restaurant">🍽 Restaurants</option>
+      <option value="cafe">☕ Cafes</option>
+      <option value="hospital">🏥 Hospitals</option>
+      <option value="bank">🏦 Banks</option>
+      <option value="pharmacy">💊 Pharmacy</option>
+      <option value="school">🏫 Schools</option>
+      <option value="gym">🏋️ Gym</option>
+      <option value="park">🌳 Parks</option>
+    </select>
+  <select id="radius">
+  <option value="500">500 m</option>
+  <option value="1000">1 km</option>
+  <option value="2000" selected>2 km</option>
+  <option value="5000">5 km</option>
+  </select>
+
+    <button onclick="findPlaces()">Search Nearby</button>
+  </div>
+
+  <div id="map"></div>
+
+  <h2>Nearby Results</h2>
+  <div id="results"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
