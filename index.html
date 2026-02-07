@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Smart Nearby Recommender</title>
+  <title>NearNow</title>
 
   <!-- Leaflet CSS -->
   <link
@@ -15,7 +15,7 @@
 <body>
 
   <header>
-    📍 Smart Nearby Recommender
+    📍 NearNow — Smart Nearby Recommender
   </header>
 
   <div class="controls">
@@ -25,12 +25,13 @@
       <option value="hospital">🏥 Hospitals</option>
       <option value="school">🏫 Schools</option>
     </select>
-  <select id="radius">
-  <option value="500">500 m</option>
-  <option value="1000">1 km</option>
-  <option value="2000" selected>2 km</option>
-  <option value="5000">5 km</option>
-  </select>
+
+    <select id="radius">
+      <option value="500">500 m</option>
+      <option value="1000">1 km</option>
+      <option value="2000" selected>2 km</option>
+      <option value="5000">5 km</option>
+    </select>
 
     <button onclick="findPlaces()">Search Nearby</button>
   </div>
@@ -45,4 +46,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
